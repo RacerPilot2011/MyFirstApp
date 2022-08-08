@@ -3,12 +3,12 @@ import random
 import platform
 import time
 from clear import *
-def start():
+def future():
     if platform.system == "Windows":
         w()
     else:
         mal()
-    print("Welcome to the future telling program!")
+    print("\nWelcome to the future telling program!")
     time.sleep(1)
     told()
 def told():
@@ -36,8 +36,8 @@ def told():
         print("Exiting...")
         time.sleep(2)
         if platform.system == "Windows":
-            exitw
+            exitw()
         else:
-            exitmal
+            exitmal()
         i = i + 1
     

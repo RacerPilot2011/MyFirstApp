@@ -24,7 +24,7 @@ func loop() {
 	for i := 0; i < 2; i++ {
 		fmt.Println("What is your yes or no question for future telling?")
 		var what string
-		fmt.Scanln(&what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what)
+		fmt.Scanln(&what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what, &what,)
 		rand.Seed(time.Now().UnixNano())
 		min := 1
 		max := 3
