@@ -21,8 +21,9 @@ if c.lower() in ['p']:
     os.chdir("python")
     print("\nRunning python...")
     time.sleep(1)
-    if platform.system == "Windows":
-        os.system("python3 index.py")
-    else:
-        os.system("sudo python3 index.py")
-
+    os.system("python3 index.py")
+if c.lower() in ['g']:
+    os.chdir("golang")
+    print("Running golang...")
+    time.sleep(1)
+    os.system("go run main.go")

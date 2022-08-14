@@ -1,7 +1,7 @@
 import time, platform
 from future import *
 from guess import *
-from clear import w,mal
+from shortcut import w,mal
 from getch import char
 if platform.system() == "Windows":
     w()

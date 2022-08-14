@@ -1,4 +1,4 @@
-Welcome to my projects.First put the MyFirstApp-main in you documents folder. Then, run the start.py to get started. The projects come in Golang, Python3, Java, and C++. Each one has a different twist to it.(Note:Python3 is work in progress and java isn't started)If java isn't working, do this:
+Welcome to my projects.First put the MyFirstApp-main in you documents folder. Then, run the start.py to get started. The projects come in Golang, Python3, Java, and C++. Each one has a different twist to it.(Note:Python3 and java work in progress) If java isn't working, do this:
 On Windows:
 set path=C:\Program Files\Java\jdkYOURJAVAVERSION\bin
 On MACOS on Linux:

@@ -2,7 +2,7 @@
 import random
 import platform
 import time
-from clear import *
+from shortcut import *
 def future():
     if platform.system == "Windows":
         w()
@@ -14,7 +14,7 @@ def future():
 def told():
     i = 0
     while (i < 3):
-        question = input('What do you want to be fortold\n')
+        input('What do you want to be fortold\n')
         print("Seeing the future...")
         time.sleep(2)
         determiner = random.randint(1,3)

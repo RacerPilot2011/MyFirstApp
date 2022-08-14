@@ -1,5 +1,7 @@
 import time, platform, random
-from clear import *
+from shortcut import *
+from getch import char
+import sys
 def gues():
     if platform.system == "Windows":
         w()
@@ -10,12 +12,31 @@ def gues():
     print("Guess a number between 1 and 100.")
     time.sleep(2)
     i = 0
+    n = random.randint(1,100)
     while(i<2):
-        guess = input=('What is you guess?\n')
+        guess = input('What is you guess?\n')
         g = int(guess)
-        n = random.randint(1,100)
-        print(n)
         if g == n:
             print("You guessed the number!")
             break
-
+        elif g < n:
+            print("Less than.")
+        elif g > n:
+            print("Greater than.")
+    c = char('Do you want to [p]lay again, [e]xit the whole program, choose another program [s]ame launguage, or another program [d]ifferent lanuage?\n')
+    if c.lower() in ['p']:
+        gues()
+    if c.lower() in ['s']:
+        shell("python3 index.py")
+    if c.lower() in ['e']:
+        if platform.system == "Windows":
+            exitw()
+        else:
+            exitmal()
+    if c.lower() in ['d']:
+        if platform.system == "Windows":
+            os.chdir("%USERPROFILE%/Documents/MyFirstApp-main")
+            shell("python3 start.py")
+        else:
+            sys.path.append("/~/Documents/MyFirstApp-main")
+            shell("python3 start.py")
