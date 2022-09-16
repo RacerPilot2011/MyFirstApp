@@ -1,4 +1,4 @@
-import time, platform, random
+import platform, random
 from shortcut import *
 from getch import char
 import sys
@@ -8,9 +8,9 @@ def gues():
     else :
         mal()
     print("\nWelcome to the guessing the number game!")
-    time.sleep(2)
+    s(2)
     print("Guess a number between 1 and 100.")
-    time.sleep(2)
+    s(2)
     i = 0
     n = random.randint(1,100)
     while(i<2):
@@ -40,3 +40,4 @@ def gues():
         else:
             sys.path.append("/~/Documents/MyFirstApp-main")
             shell("python3 start.py")
+gues()

@@ -1,5 +1,4 @@
-import os, sys
-
+import os, sys,time
 def exitw():
     os.system("cls")
     sys.exit()
@@ -12,3 +11,6 @@ def mal():
     os.system("clear")
 def shell(message):
     os.system(message)
+def s(seconds):
+    time.sleep(seconds)
+
