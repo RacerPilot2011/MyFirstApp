@@ -22,5 +22,6 @@ def edc():
     button2 = Button(root, text="DECODE", command=d)
     button.pack()
     button2.pack()
+    root.destory
     root.mainloop()
 edc()
