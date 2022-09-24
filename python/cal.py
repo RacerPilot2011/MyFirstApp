@@ -1,6 +1,6 @@
 from getch import *
 from shortcut import *
-import platform
+import platform, tkinter
 def edc():
     if platform.system == "Windows ":
         w()
