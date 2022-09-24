@@ -8,7 +8,7 @@ if platform.system() == "Windows":
 else:
     mal()
 print("Welcome to my python projects!")
-s(1)
+s(2)
 c = char("Do you want to use the [C]alculator, play the [G]uessing Game, or ask the [F]uture Teller?\n")
 if c.lower() in ['f']:
     future()
