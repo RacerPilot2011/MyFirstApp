@@ -1,6 +1,7 @@
 import  platform
 from future import *
 from guess import *
+from cal import *
 from shortcut import w,mal,s
 from getch import char
 if platform.system() == "Windows":
@@ -14,3 +15,5 @@ if c.lower() in ['f']:
     future()
 if c.lower() in ['g']:
     gues()
+if c.lower() in ['c']:
+    edc()
