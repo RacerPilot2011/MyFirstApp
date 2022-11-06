@@ -2,6 +2,13 @@ import time
 import os
 import platform
 import curses, time
+
+try:
+    try:
+        os.system("go version")
+    except InvalidError:
+        if platform.system() == "Linux":
+            is.
 def char(message):
     try:
         win = curses.initscr()
