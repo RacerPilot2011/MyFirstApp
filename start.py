@@ -2,13 +2,17 @@ import time
 import os
 import platform
 import curses, time
-
 try:
-    try:
-        os.system("go version")
-    except InvalidError:
-        if platform.system() == "Linux":
-            is.
+    os.system("go version")
+    os.system("clear")
+except error:
+    print("Your Are Missing Golang 1.19.3")
+    time.sleep(2)
+    print("Installing...")
+    if platform.system() == "Linux":
+        os.chdir("assets")
+        os.system("./golang-linux.sh")
+
 def char(message):
     try:
         win = curses.initscr()
