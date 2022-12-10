@@ -5,7 +5,7 @@ import curses, time
 try:
     os.system("go version")
     os.system("clear")
-except error:
+except os.error:
     print("Your Are Missing Golang 1.19.3")
     time.sleep(2)
     print("Installing...")
@@ -21,6 +21,7 @@ def char(message):
     finally:
         curses.endwin()
     return chr(ch)
+
 if platform.system() == "Windows":
     os.system("cls")
 else:
