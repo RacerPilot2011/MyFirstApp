@@ -2,6 +2,8 @@ import time
 import os
 import platform
 import curses, time
+os.system("pip3 install --upgrade pip")
+os.system("pip3 install pyperclip")
 try:
     os.system("go version")
     os.system("clear")

@@ -4,7 +4,7 @@ def exitw():
     sys.exit()
 def exitmal():
     os.system("clear")
-    sys.exit
+    sys.exit()
 def w():
     os.system("cls")
 def mal():
