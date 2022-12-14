@@ -13,8 +13,7 @@ edc()
 def e():
     d = input('What do you want to encode?\n')
     encode = d.replace('a', '1').replace('b', 'f').replace('c', 'r').replace('d', '@').replace('e', '2').replace(' ', '$').replace('g', '%').replace('h', '[').replace('i', 'T').replace('j', '(').replace('k', 'v').replace('l', '0').replace('m', '>').replace('n', '"')
-    print("Your message is",encode,". Do you want to copy?([Y]es/[N]o)")
-    copy = encode
+    print(encode)
     while True:
         k = getkey()
         if k == 'y':
@@ -22,7 +21,7 @@ def e():
         if k == 'n':
             a = "a"
         if a == "aa":
-            pyperclip.copy(copy)
+            pyperclip.copy(encode)
             if platform.system == "Windows":
                 exitw()
             else:

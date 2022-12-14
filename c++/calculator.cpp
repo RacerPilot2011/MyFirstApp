@@ -6,9 +6,6 @@
 #include <stdio.h>
 #include "clear.h"
 using namespace std;
-void exit(){
-    cout << "e";
-}
 int cal()
 {
     for (;;){ 
@@ -34,9 +31,10 @@ int cal()
         cout << "\nYour anwswer  is: " << result<< "\n";
     }
     if (op == 'e'){
-        exit();
+        break;
     }
 }
+return 0;
 }
 int main(){
     cout << "Welcome to the calculator!\n";
