@@ -1,14 +1,9 @@
-import  platform
-from future import *
-from cal import *
+import  os, time 
 from shortcut import *
-if platform.system() == "Windows":
-    w()
-else:
-    mal()
+clear()
 print("Welcome to my python projects!")
 s(2)
-print("Do you want to use the [C]oder, play the [G]uessing Game, or ask the [F]uture Teller?\n")
+print("Do you want to use the [C]oder, play the [G]uessing Game, or ask the [F]uture Teller?")
 while True:
     k = getkey()
     if k == 'c':
@@ -16,6 +11,6 @@ while True:
     if k == 'f':
         a = "a"
     if a == "aa":
-        edc()
+        shell("python3 cal.py")
     elif a == "a":
-        future()
+        shell("python3 future.py")
