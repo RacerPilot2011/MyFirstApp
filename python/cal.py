@@ -1,14 +1,21 @@
-import platform
-import clipboard as pyperclip
+import pyperclip
 from shortcut import *
-def edc():
-    if platform.system == "Windows ":
-        w()
-    else:
-        mal()
-    print("Coder version 1.0")
-    s(1)
-    print("Do you want to [E]ncode or [D]ecode?")
+clear()
+print("Coder version 1.0")
+s(1)
+print("Do you want to [E]ncode or [D]ecode?")
+while True:
+    k = getkey()
+    if k == 'e':
+        a = "aa"
+        break
+    if k == 'd':
+        a = "a"
+        break
+if a == "aa":
+    e()
+elif a == "a":
+    d()
 def e():
     d = input('What do you want to encode?\n')
     encode = d.replace('a', '1').replace('b', 'f').replace('c', 'r').replace('d', '@').replace('e', '2').replace(' ', '$').replace('g', '%').replace('h', '[').replace('i', 'T').replace('j', '(').replace('k', 'v').replace('l', '0').replace('m', '>').replace('n', '"')
@@ -48,16 +55,4 @@ def d():
                 exitw()
             else:
                 exitmal()
-while True:
-    k = getkey()
-    if k == 'e':
-        a = "aa"
-        break
-    if k == 'd':
-        a = "a"
-        break
-if a == "aa":
-    e()
-elif a == "a":
-    d()
 
