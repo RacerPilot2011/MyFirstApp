@@ -1,14 +1,9 @@
 import random
-import platform
 from shortcut import *
-def future():
-    if platform.system == "Windows":
-        w()
-    else:
-        mal()
-    print("\nWelcome to the future telling program!")
-    s(1)
-    told()
+clear()
+print("\nWelcome to the future telling program!")
+s(1)
+told()
 def told():
     i = 0
     while (i < 3):
