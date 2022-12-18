@@ -1,7 +1,7 @@
 import random
 from shortcut import *
 clear()
-print("\nWelcome to the future telling program!")
+print("Welcome to the future telling program!")
 s(1)
 told()
 def told():
