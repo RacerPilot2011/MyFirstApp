@@ -1,14 +1,15 @@
-import os, sys,time,sys,tty,os,termios
+import os, sys,time,sys,tty,os,termios, platform
 def exitw():
     os.system("cls")
     sys.exit()
 def exitmal():
     os.system("clear")
     sys.exit()
-def w():
-    os.system("cls")
-def mal():
-    os.system("clear")
+def clear():
+    if platform.system == "Windows":
+        os.system("cls")
+    else: 
+        os.system("clear")
 def shell(message):
     os.system(message)
 def s(seconds):

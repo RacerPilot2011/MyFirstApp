@@ -52,7 +52,7 @@ else:
     os.system("clear") 
 print("Weclome to all my Programs")
 time.sleep(1)
-print("Do you want to do the [P]ython scripts, [G]olang scripts, or [C]++ scripts(press the key on keyboard.)\n")
+print("Do you want to do the [P]ython scripts, [G]olang scripts, or [C]++ scripts(press the key on keyboard.)")
 while True:
     k = getkey()
     if k == 'p':
