@@ -1,16 +1,14 @@
-import  os, time 
 from shortcut import *
 clear()
 print("Welcome to my python projects!")
 s(2)
-print("Do you want to use the [C]oder, play the [G]uessing Game, or ask the [F]uture Teller?")
+print("Do you want to use the [C]oder, test out your facts skills with the the [M]ath Game, or ask the [F]uture Teller?")
 while True:
     k = getkey()
     if k == 'c':
-        a = "aa"
-    if k == 'f':
-        a = "a"
-    if a == "aa":
-        shell("python3 cal.py")
-    elif a == "a":
-        shell("python3 future.py")
+        shell("python3 ~/Documents/MyFirstApp/python/cal.py")
+    elif k == 'f':
+        shell("python3 ~/Documents/MyFirstApp/python/future.py")
+    elif k == 'm':
+        shell("python3 ~/Documents/MyFirstApp/python/math.py")
+    

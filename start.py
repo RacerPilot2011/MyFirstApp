@@ -52,14 +52,16 @@ else:
     os.system("clear") 
 print("Weclome to all my Programs")
 time.sleep(1)
-print("Do you want to do the [P]ython scripts, [G]olang scripts, or [C]++ scripts(press the key on keyboard.)")
-while True:
-    k = getkey()
-    if k == 'p':
-        a = "aa"
-    if a == "aa":
-        os.chdir("python")
-        print("Running python...")
-        time.sleep(1)
-        os.system("python3 index.py")
-        break
+def language():
+    print("Do you want to do the [P]ython scripts, [G]olang scripts, or [C]++ scripts(press the key on keyboard.)")
+    while True:
+        k = getkey()
+        if k == 'p':
+            a = "aa"
+        if a == "aa":
+            os.chdir("python")
+            print("Running python...")
+            time.sleep(1)
+            os.system("python3 index.py")
+            break
+language()

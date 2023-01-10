@@ -1,10 +1,11 @@
 import os, sys,time,sys,tty,os,termios, platform
-def exitw():
-    os.system("cls")
-    sys.exit()
-def exitmal():
-    os.system("clear")
-    sys.exit()
+def exit():
+    if platform.system == "Winndows":
+        os.system("cls")
+        sys.exit()
+    else:
+        os.system("clear")
+        sys.exit()
 def clear():
     if platform.system == "Windows":
         os.system("cls")
