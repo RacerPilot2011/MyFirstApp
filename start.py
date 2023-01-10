@@ -56,12 +56,22 @@ def language():
     print("Do you want to do the [P]ython scripts, [G]olang scripts, or [C]++ scripts(press the key on keyboard.)")
     while True:
         k = getkey()
+        if k == 'g':
+            os.chdir("golang")
+            print("Running golang...")
+            time.sleep(1)
+            os.system("go run main.go")
+            break
         if k == 'p':
-            a = "aa"
-        if a == "aa":
             os.chdir("python")
             print("Running python...")
             time.sleep(1)
             os.system("python3 index.py")
+            break
+        if k == 'c':
+            os.chdir("c++")
+            print("Running c++...")
+            time.sleep(1)
+            os.system("./main")
             break
 language()
