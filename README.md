@@ -1,8 +1,9 @@
 Welcome to my projects.You don't need to install anything.It will do it for you.First put the MyFirstApp-main in you documents folder. Make sure that you have the latest package manager.
+##Debian based(Debian, Ubuntu, Linux mint etc.)
 ``` shell
 sudo apt update && sudo apt upgrade
 ```
-or
+##Redhat based(Redhat, fedora)
 ``` shell
 sudo dnf update && sudo dnf upgrade
 ```
