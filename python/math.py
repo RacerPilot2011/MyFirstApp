@@ -1,5 +1,5 @@
 import time,random,os
-from shortcut import *
+from shortcut import 
 os.system("clear")
 print("Welcome to the math fact helper!")
 time.sleep(2)

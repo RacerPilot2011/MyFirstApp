@@ -2,12 +2,8 @@
 #include "clear.h"
 #include <unistd.h>
 using namespace std;
-#ifdef _WIN32
-W());
-#else
-MAL();
-#endif
 int main(){
+    cscreen();
     cout << "Welcome to my c++ programs!\n";
     sleep(1);
     string an;

@@ -32,9 +32,8 @@ os.system("pip3 install --upgrade pip")
 os.system("pip3 install pyperclip")
 try:
     os.system("go version")
-    os.system("clear")
 except os.error:
-    print("Your Are Missing Golang 1.19.3")
+    print("Your Are Missing Golang 1.19.5")
     time.sleep(2)
     print("Installing...")
     if platform.system() == "Linux":
@@ -42,14 +41,13 @@ except os.error:
         os.system("./golang-linux.sh")
     elif platform.system() == "Windows":
         os.chdir("assets")
-        s = os.path.expanduser('~\Documents\MyFirstApp')
+        s = os.path.expanduser('%HOMEPATH%/Documents/MyFirstApp/assets')
         
         os.system(s, "golang-windows.cmd")
-
 if platform.system() == "Windows":
     os.system("cls")
 else:
-    os.system("clear") 
+    os.system("clear")
 print("Weclome to all my Programs")
 time.sleep(1)
 def language():
@@ -72,6 +70,7 @@ def language():
             os.chdir("c++")
             print("Running c++...")
             time.sleep(1)
+            os.system("g++ main.cpp -o main")
             os.system("./main")
             break
 language()

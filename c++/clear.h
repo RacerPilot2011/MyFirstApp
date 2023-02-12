@@ -1,13 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int W(){
+int cscreen(){
+    #ifdef _WIN32
     system("cls");
     return 0;
-}
-int MAL(){
+    #else
     system("clear");
     return 0;
+    #endif
 }
 int EXITW(){
     system("cls");

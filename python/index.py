@@ -1,4 +1,4 @@
-from shortcut import *
+from shortcut import clear, getkey,s,shell
 clear()
 print("Welcome to my python projects!")
 s(2)
